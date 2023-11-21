@@ -1,0 +1,27 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Jekyll New" # the name of your site, e.g. ACME Corp.
+logo: '/assets/images/logo.png'
+
+menu:
+  main:
+    - name: 'Home'
+      url: '/'
+    - name: 'Portfolio'
+      url: '#portfolio'
+    - name: 'Contact Us'
+      url: '/contact-us/'
+  footer:
+    - name: 'Privacy Policy'
+      url: '/privacy-policy/'
+    - name: 'Term of Conidtions'
+      url: '/term-of-conditions'
+    - name: 'About'
+      url: '/about/'
+
+details:
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam mollitia maiores, esse a voluptas assumenda. Dolorem reprehenderit minima, veritatis repudiandae quis impedit."
+  contact:
+    - "111-222-333"
+    - "123-456-789"
+    - "example@gmail.com"

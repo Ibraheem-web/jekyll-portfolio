@@ -1,0 +1,22 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <title>{{ page.title }}-Jekyll Example</title>
+</head>
+<body class="scroll-smooth">
+    <header>
+        {% include header.html %}
+    </header>
+    <main class="w-full 2xl:max-w-7xl 2xl:mx-auto">
+        {{ content }}
+    </main>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+</html>

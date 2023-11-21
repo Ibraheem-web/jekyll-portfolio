@@ -1,0 +1,34 @@
+<div class="bg-fuchsia-950 py-10 lg:px-40 xl:px-60 2xl:px-3 2xl:max-w-7xl 2xl:mx-auto">
+    <div class="flex flex-col gap-10 sm:flex-row sm:justify-between sm:px-12 lg:px-0 2xl:px-3">
+        <div class="flex flex-col gap-3 justify-center items-center sm:max-w-xs sm:items-start">
+            {% if site.logo %}
+                <div class="w-40 sm:self-start">
+                    <a href="/"><img src="{{ site.logo }}" alt="logo" class="w-full h-full"></a>
+                </div>
+            {% endif %}
+            {% if site.details.description %}
+            <div class="px-5 sm:px-0">
+                <p class="text-slate-100 text-sm text-center leading-tight tracking-widest sm:text-left">{{ site.details.description }}</p>
+            </div>
+            {% endif %}
+        </div>
+        <div class="flex flex-col justify-center items-center gap-10 sm:items-start md:flex-row">
+            <div class="text-center sm:text-start">
+                <p class="text-slate-300">Links</p>
+                <ul>
+                    {% for item in site.menu.footer %}
+                    <li><a href="{{ item.url }}" class="text-slate-100 text-sm hover:text-slate-300 transition-colors py-2 cursor-pointer">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="text-center sm:text-start">
+                <p class="text-slate-300">Contact</p>
+                <ul>
+                    {% for items in site.details.contact %}
+                    <li><p class="text-slate-100 text-sm py-1">{{ items }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

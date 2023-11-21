@@ -1,0 +1,13 @@
+<section style="background: url('/assets/images/hero-bg.jpg');" class="bg-white py-10 w-full h-[90vh] bg-bottom">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class="container text-center px-5 sm:max-w-sm md:max-w-lg space-y-5">
+            <h2 class="text-4xl text-fuchsia-800 font-bold">{{ page.heading }}</h2>
+            <p class="text-lg text-slate-100 leading-snug tracking-wide">{{ page.para }}</p>
+            <div class="flex flex-wrap gap-5 justify-center items-center">
+                {% for btn in page.btn %}
+                    <a href="{{ btn.link }}" class="py-2 rounded-lg text-slate-200 w-40 bg-fuchsia-800 hover:bg-fuchsia-900 transition-colors">{{ btn.text }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
